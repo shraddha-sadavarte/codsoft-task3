@@ -7,13 +7,45 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <b class="name">&nbsp;Calciii</b>
     <div class="calculator">
-        <input type="text" class="input-screen" >
-    </div>
-    
-    
+        <b class="name">&nbsp;Calciii</b>
+        <div>
+           <input type="text" class="input-screen" />
+        </div>
+        <div class="container">
+            <div onclick="clearScreen()" class="btn myBtn">clr</div>
+            <div class="btn" id="enableBtn">On</div>
+            <div class="btn" id="disableBtn">Off</div>
+         </div>
 
+        <div class="container">
+           <div  onclick="buttonPress(7)" class="btn myBtn">7</div>
+           <div  onclick="buttonPress(8)" class="btn myBtn">8</div>
+           <div  onclick="buttonPress(9)" class="btn myBtn">9</div>
+           <div  onclick="buttonPress('/')" class="btn bg-r myBtn">÷</div>
+        </div>
+
+        <div class="container">
+            <div  onclick="buttonPress(4)" class="btn myBtn">4</div>
+            <div  onclick="buttonPress(5)" class="btn myBtn">5</div>
+            <div  onclick="buttonPress(6)" class="btn myBtn">6</div>
+            <div  onclick="buttonPress('*')" class="btn bg-r myBtn">×</div>
+         </div>
+
+         <div class="container">
+            <div  onclick="buttonPress(3)" class="btn myBtn">3</div>
+            <div  onclick="buttonPress(2)" class="btn myBtn">2</div>
+            <div  onclick="buttonPress(1)" class="btn myBtn">1</div>
+            <div  onclick="buttonPress('-')"  class="btn bg-r myBtn">-</div>
+         </div>
+
+         <div class="container">
+            <div  onclick="buttonPress(0)" class="btn myBtn">0</div>
+            <div  onclick="buttonPress('.')" class="btn bg-r myBtn">.</div>
+            <div  onclick="buttonPress('+')" class="btn bg-r myBtn">+</div>
+            <div  onclick="calculate()" class="btn bg-r myBtn">=</div>
+         </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
